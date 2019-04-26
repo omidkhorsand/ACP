@@ -509,8 +509,8 @@ def test_add_agg_primitives():
 def test_add_trans_primitives():
     '''Test for adding transformative primitives'''
     m = FeatureExtraction(es)
-    m.add_trans_primitives(['weekend','day'])
-    assert set(m.trans_primitives) == set(['weekend','day'])
+    m.add_trans_primitives(['week','day'])
+    assert set(m.trans_primitives) == set(['week','day'])
     
 def test_remove_primitive():
     '''Test for removing primitives'''
